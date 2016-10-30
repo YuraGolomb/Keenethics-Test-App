@@ -1,0 +1,46 @@
+.profile-wrapper{
+	margin-left: 40px;
+	
+	.notification{
+		color:red;
+	}
+
+	.form{
+		padding:10px;
+		border-bottom:1px solid #ABB2B9;
+		width: 500px;
+	    padding-left: 100px;
+	    padding-bottom: 15px;
+	}
+	input{
+		margin-left:10px;
+		margin-top:10px;
+	}
+
+	#old-password{
+		margin-left:16px;
+	}
+
+	.submit-button{
+	float: right;
+	margin:5px;
+	}
+	.submit-button {
+		text-align: center;
+	    font-weight: 600;
+	    color: white;
+	    text-decoration: none;
+	    padding: 4px;
+	    background: #5D6D7E;
+	    -webkit-transition: 0.2s;
+	    transition: 0.2s;
+	    height: 17px;
+	    display: block;
+	    width: 20%;
+	} 
+	.submit-button:hover { background: #B3B6B7; }
+	.submit-button:active {
+		background:  #5D6D7E;
+	}
+
+}

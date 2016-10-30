@@ -2,6 +2,7 @@
 //import { render } from 'react-dom';
 //import { renderRoutes } from '../imports/startup/client/routes.jsx';
 import { Messages , Countries} from '/api/lists/lists.js';
+import '/api/server/methods.js'
 
  Meteor.startup(() => {
 
@@ -21,7 +22,7 @@ import { Messages , Countries} from '/api/lists/lists.js';
 
 	Meteor.publish('messages', (country) => {
 
-   		return Messages.find();
+   		return Messages.find({}, { sort:{ createdAt: 1 } } );
 	});
 
 	Meteor.publish('userData', function() {

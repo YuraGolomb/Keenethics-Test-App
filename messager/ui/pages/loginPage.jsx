@@ -2,6 +2,9 @@ import React, { Component, PropTypes } from 'react'
 import { browserHistory, Link } from 'react-router'
 import { createContainer } from 'meteor/react-meteor-data'
 
+//import '/loginPage.scss';
+//import "{}/ui/pages/loginPage.import.scss"
+
 export default class LoginPage extends Component {
 	constructor(props){
 		super(props);
@@ -13,13 +16,12 @@ export default class LoginPage extends Component {
 
 	handleSubmit(e){
 		e.preventDefault();
-		console.log('here');
 		var email = document.getElementById('login-email').value;
 		var password = document.getElementById('login-password').value;
 		Meteor.loginWithPassword(email, password, (err) => {
 			if(err){
 				this.setState({
-					err: err.reason
+					error: err.reason
 				})
 			} else {
 				browserHistory.push('/');
@@ -39,25 +41,23 @@ export default class LoginPage extends Component {
                     className="form "
                     onSubmit={this.handleSubmit}>
                 <div className="">
+                	<p className="login">Log In</p>
                   <input type="email"
                         id="login-email"
-                        className=""
+                        className="login-input"
                         placeholder="email"/>
                 </div>
                 <div className="">
                   <input type="password"
                         id="login-password"
-                        className=""
+                        className="login-input"
                         placeholder="password"/>
                 </div>
                 <div className="">
-                  <input type="submit"
-                        id="login-button"
-                        className=""
-                        value="Login" />
+                    <a href="#" className="button" onClick={this.handleSubmit}> Log In </a>
                 </div>
                 <div className="">
-                  <p className="">
+                  <p className="text-right">
                     Don't have an account? Register <Link to="/signup">here</Link>
                   </p>
                 </div>

@@ -6,6 +6,7 @@ import App from '/ui/containers/App.jsx';
 import Chat from '/ui/components/chat.jsx';
 import LoginPage from '/ui/pages/loginPage.jsx';
 import SignupPage from '/ui/pages/signupPage.jsx';
+import Profile from '/ui/components/profile.jsx'
 
 
 Meteor.startup ( () => {
@@ -16,6 +17,7 @@ Meteor.startup ( () => {
 			<Route path="signup" component={SignupPage}/>
 			<Route path="/" component={App}>
 				<IndexRoute component={Chat}/>
+				<Route path="profile" component={Profile}/>
 			</Route>
 		</Router>,
 		document.getElementById( 'react-root' )

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { createContainer } from 'meteor/react-meteor-data';
-import { browserHistory } from 'react-router'
+
+import { browserHistory, Link } from 'react-router'
 
 export default class App extends Component {
 	constructor(props){
@@ -41,8 +42,11 @@ export default class App extends Component {
 
 		return(
 			<div id='application'> 
-			<a href="#" onClick={this.logout}>Logout</a>
-			<h1>App</h1>
+			<div className="top-panel">
+			<a href="#" className="nav-button" id="logout" onClick={this.logout}>Logout</a>
+			<Link className="nav-button" to="/profile">Profile</Link>
+			<Link className="nav-button" to="">Chat</Link>
+			</div>
 				{ContentEl}
 			</div>
 		)

@@ -1,0 +1,37 @@
+.loginPage-container{
+	width: 300px;
+    margin: auto;
+    margin-top: 200px;
+    border: 1px solid #B3B6B7;
+    padding: 15px 15px 0;
+    
+    .alert{
+    	color:red;
+    }
+
+	input {
+		margin-bottom: 10px;
+		padding: 4px;
+		margin-left: 25px;
+	}
+
+	.text-right{
+		text-align:right;
+	}
+
+	#login-button{
+	    border-radius: 7px;
+	    padding: 6px;
+	    width: 70px;
+	    margin: auto;
+	    display: block;
+	}
+
+	.login-input{
+	    width: 80%;
+	    margin: 8px auto;
+	    display: block;
+	    padding:5px;
+	}
+
+}
