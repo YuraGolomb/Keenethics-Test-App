@@ -36,7 +36,6 @@ Meteor.methods({
 			result = (res.error == null);
 
 			if(result){
-				console.log('here')
 				Accounts.setPassword(id, newPass, {logout: false})
 			}
 			return result

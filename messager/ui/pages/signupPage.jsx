@@ -41,25 +41,24 @@ export default class SignupPage extends Component {
                 <form  id="login-form"
                     className=""
                     onSubmit={this.handleSubmit}>
-                <div className="">
+                <div>
                   <input type="text" id="signup-name"
                         className="login-input" 
                         placeholder="name"/>
                 </div>
-                <div className="">
+                <div>
                   <input type="email" id="signup-email"
                         className="login-input" 
                         placeholder="email"/>
                 </div>
-                <div className="">
+                <div>
                   <input type="password" id="signup-password"
                         className="login-input"
                         placeholder="password"/>
                 </div>
-                <div className="">
+                <div>
                 	<a href="#" className="button" onClick={this.handleSubmit}>Sign In</a>
                 </div>
-                <div className="">
                   <p className="text-right">
                     Already have an account? Login <Link to="/login">here</Link>
                   </p>

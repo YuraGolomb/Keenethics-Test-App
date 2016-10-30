@@ -1,6 +1,3 @@
-//import { Meteor } from 'meteor/meteor';
-//import { render } from 'react-dom';
-//import { renderRoutes } from '../imports/startup/client/routes.jsx';
 import { Messages , Countries} from '/api/lists/lists.js';
 import '/api/server/methods.js'
 
@@ -31,8 +28,3 @@ import '/api/server/methods.js'
 		return Meteor.users.find(this.userId, {fields: { channel: 1, } } );
 	});
 });
-
-// 	//render(renderRoutes(), document.getElementById('app'));
-	
-
-// });

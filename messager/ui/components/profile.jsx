@@ -134,7 +134,6 @@ class Profile extends Component{
 		                		</label>
 			                 	<input type="password"
 			                        id="old-password"
-			                        className=""
 			                        placeholder="old password"/>
 	                        </p>
 	                        <p>
@@ -143,7 +142,6 @@ class Profile extends Component{
 		                		</label>
 			                    <input type="password"
 			                        id="new-password"
-			                        className=""
 			                        placeholder="new password"/>
 			                    <a href="#" className="submit-button" id="logout" onClick={this.handlePasswordSubmit}>Enter</a>
 	                        </p>

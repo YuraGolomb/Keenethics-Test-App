@@ -40,23 +40,23 @@ export default class LoginPage extends Component {
                 <form  id="login-form"
                     className="form "
                     onSubmit={this.handleSubmit}>
-                <div className="">
+                <div>
                 	<p className="login">Log In</p>
                   <input type="email"
                         id="login-email"
                         className="login-input"
                         placeholder="email"/>
                 </div>
-                <div className="">
+                <div>
                   <input type="password"
                         id="login-password"
                         className="login-input"
                         placeholder="password"/>
                 </div>
-                <div className="">
+                <div>
                     <a href="#" className="button" onClick={this.handleSubmit}> Log In </a>
                 </div>
-                <div className="">
+                <div>
                   <p className="text-right">
                     Don't have an account? Register <Link to="/signup">here</Link>
                   </p>
